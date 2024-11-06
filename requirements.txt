@@ -63,10 +63,8 @@ tenacity==9.0.0
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
 tensorflow==2.18.0
-# Removed the incompatible version tensorflow-io-gcs-filesystem==0.31.0
-# You can install the latest compatible version or remove it if not needed
-tensorflow-io-gcs-filesystem>=0.37.1  # Make sure to use a compatible version
-tensorflow_intel==2.18.0
+tensorflow-io-gcs-filesystem>=0.37.1  # Ensure the correct version for your Python version
+# Removed tensorflow_intel since it's not compatible with Python 3.12
 termcolor==2.5.0
 threadpoolctl==3.5.0
 toml==0.10.2
