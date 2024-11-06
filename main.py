@@ -42,7 +42,7 @@ input_df['brand_me'] = label_encoder.transform(input_df['brand_me'])
 # Model prediction
 if st.button('Predict Price 💰'):
     predicted_price = rf_regressor.predict(input_df)
-    st.write(f"Predicted Price: ₹{predicted_price[0]:,.2f}")
+    st.write(f"Predicted Price: ${predicted_price[0]:,.2f}")
 
 # Optional: Add more visualizations or analysis
 st.subheader('📊 Feature Importance Visualization')
